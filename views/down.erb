@@ -1,0 +1,7 @@
+<% if @num_bottles == 0 %>
+	<h1>No bottles of beer on the wall</h1>
+	<a href="/">Start Over</a>
+<% else %>
+	<h1><%= @num_bottles %> bottles of beer on the wall</h1>
+	<a href='/bottles/<%= @num_bottles - 1 %>'>Take One Down.</a>
+	<% end %>
